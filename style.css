@@ -1,95 +1,105 @@
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
-        
+
         header {
             font-family: 'Raleway';
         }
-        
+
         body {
             Font-size: 14px;
             font-family: 'Open Sans';
         }
-        
+
         nav {
             display: flex;
             justify-content: space-around;
             width: 300px;
         }
-        
+
         nav a {
             text-decoration: none;
             color: hsl(0, 0%, 100%);
         }
-        
+
         nav a:hover {
             font-family: 'Raleway';
             font-weight: 700;
             color: hsl(0, 0%, 100%);
         }
-        
+
         footer {
             background-color: hsl(216, 53%, 9%);
-            padding: 207px 20px 100px 20px;
+            padding: 207px 100px 10px;
         }
-        
+
         li {
             list-style: none;
             padding: 5px 5px 5px;
         }
-        
+
         li a {
             color: hsl(0, 0%, 100%);
             text-decoration: none;
         }
-        
+
         a:hover {
             font-weight: 700;
         }
-        
+
         #banniere {
             padding: 367px;
         }
-        
+
         #contain {
             background-color: hsl(218, 28%, 13%);
         }
+
         /*  bloc employés  */
-        
-        #profile_1 {
+
+        .profil {
             z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px 50px;
         }
-        
+
         #profile-1 img {
             width: 50px;
             height: 50px;
             border-radius: 50px;
         }
-        
+
         #profile-2 img {
             width: 50px;
             height: 50px;
             border-radius: 50px;
         }
-        
+
         #profile-3 img {
             width: 50px;
             height: 50px;
             border-radius: 50px;
         }
+
         /*  reseaux sociaux*/
-        
+        .reseau {
+            width: 300px;
+        }
+
         .fb,
         .tw,
         .in {
-            height: 30px;
-            width: 30px;
-            padding: 7px;
+            height: 50px;
+            width: 50px;
+            padding: 10px;
             border: 1px solid hsl(0, 0%, 100%);
             border-radius: 50px;
         }
-        
+
         .fb:hover,
         .tw:hover,
         .in:hover {
@@ -100,17 +110,19 @@
             border: 1px solid hsl(176, 68%, 64%);
             border-radius: 50px;
         }
+
         /* section stay productive  */
-        
+
         .fylo_works a {
             color: hsl(198, 60%, 50%);
         }
-        
+
         .fylo_works a:hover {
             color: hsl(0, 0%, 100%);
         }
+
         /* cercle qui entoure la flèche après le lien see how... */
-        
+
         #cercle {
             color: hsl(216, 53%, 9%);
             border: none;
@@ -118,7 +130,7 @@
             border-radius: 50px;
             font-weight: normal;
         }
-        
+
         #cercle:hover {
             color: hsl(216, 53%, 9%);
             border: none;
@@ -126,48 +138,51 @@
             border-radius: 50px;
             font-weight: normal;
         }
-        
+
         .decoration {
             height: 1px;
             width: 7px;
             color: hsl(198, 60%, 50%);
         }
-        
+
         .decoration:hover {
             height: 1px;
             width: 7px;
             color: hsl(0, 0%, 100%);
         }
+
         /* partie footer */
-        
+
         .ss_foot {
             width: 300px;
+            margin-right: 90px;
         }
-        
+
         .locationImg {
             left: 113px;
             bottom: 183px;
         }
-        
+
         .locationText {
             float: left;
             position: absolute;
             left: 25px;
             top: -4px;
         }
+
         /*  pour espacer les div et leur icone */
-        
+
         .tel {
             line-height: 30px;
         }
-        
+
         .numeroTel {
             float: right;
             left: 42px;
             position: absolute;
             top: -4px;
         }
-        
+
         .adresseEmail {
             float: right;
             /* text-align: center; */
@@ -176,87 +191,93 @@
             position: absolute;
             top: 3px;
         }
+
         /* //Color */
-        
+
         .bg-dark-blue {
             background-color: hsl(217, 28%, 15%);
         }
+
         /* testimonial background-color */
-        
+
         .bg-blue {
             background-color: hsl(219, 30%, 18%);
         }
-        
+
         .erreur {
             color: hsl(0, 100%, 63%);
         }
-        
+
         .white-color {
             color: hsl(0, 0%, 100%);
         }
+
         /*  alignement, padding*/
-        
+
         .text-center {
             text-align: center;
         }
-        
+
         .text-align-right {
             text-align: right;
         }
-        
+
         .padding-50 {
             padding: 50px;
         }
-        
+
         .margintb-15 {
             margin-bottom: 15px;
             margin-top: 15px;
         }
-        
+
         .margin-ri-10 {
             margin-right: 10px;
         }
+
         /* proprités flexbox */
-        
+
         .d-flex {
             display: flex;
         }
-        
+
         .justify-space-be {
             justify-content: space-between;
         }
-        
+
         .justify-space-ar {
             justify-content: space-around;
         }
-        
+
         .align-item-ce {
             align-items: center;
         }
+
         /* les positions */
-        
+
         .p-abs {
             position: absolute;
         }
-        
+
         .p-rel {
             position: relative;
         }
+
         /* partie all your file */
-        
+
         #header_bottom {
             /* text-align: center; */
             width: 445px;
             margin: auto;
         }
-        
+
         #header-bottom {
             background-image: url(images/illustration-intro.png);
             background-repeat: no-repeat;
             background-position-x: center;
             text-align: center;
         }
-        
+
         #btn_header {
             background-color: hsl(198, 60%, 50%);
             color: hsl(0, 0%, 100%);
@@ -265,13 +286,13 @@
             border-radius: 15px;
             border: none;
         }
-        
+
         #btn_header:hover {
             background-color: hsl(176, 68%, 64%);
         }
-        
+
         .files {
-            width: 437px;
+            width: 43vw;
             margin: auto;
             z-index: 1;
             position: absolute;
@@ -279,78 +300,83 @@
             /* bottom: 103px; */
             top: 677px;
         }
+
         /*  la vague */
-        
+
         .vague {
             top: 554px;
         }
+
         /*partie stay producive*/
-        
+
         .stay_productive {
-            margin-right: 200px;
-            margin-left: 200px;
+            width: 70vw;
         }
-        
+
         #stay {
             float: right;
             width: 558px;
         }
-        
+
         .width-450 {
             width: 450px;
         }
+
         /* partie service  */
-        
         #service {
             display: grid;
-            grid-template-columns: 2fr 2fr;
+            grid-template-rows: repeat(4, 1fr);
             margin: auto;
             width: 950px;
             padding: 140px;
             grid-row-gap: 90px;
         }
-        
+
+
         .ss_service {
             width: 300px;
         }
+
         /* partie employe de l'entreprise*/
-        
+
         #employeEtQuotes {
-            padding: 180px 180px 300px 180px;
+            padding: 180px 180px 20px 180px;
             position: relative;
             z-index: 2;
         }
-        
+
         #employeEtQuotes>img:nth-child(1) {
             position: absolute;
             z-index: -1;
             top: 145px;
             left: 168px;
         }
-        
+
         #employe {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
         }
-        
+
         .team {
             padding: 30px;
             width: 400px;
             box-shadow: 5px 2px 5px hsl(216, 53%, 9%);
         }
+
         /*   bloc inscription*/
-        
+
         .inscription {
+            text-align: center;
             margin: auto;
             width: 630px;
             padding: 50px;
             border-radius: 10px;
             z-index: 1;
-            left: 25%;
+            left: 30%;
             bottom: -97px;
             box-shadow: 5px 2px 5px hsl(216, 53%, 9%);
         }
-        
+
         #btn_email {
             background-color: hsl(0, 0%, 100%);
             color: rgb(236, 219, 219);
@@ -359,7 +385,7 @@
             border-radius: 15px;
             border: none;
         }
-        
+
         #btn_email_submit {
             background-color: hsl(198, 60%, 50%);
             color: hsl(0, 0%, 100%);
@@ -367,42 +393,60 @@
             padding: 12px 45px;
             border-radius: 15px;
             border: none;
+            margin-top: 15px;
         }
-        
+
         #btn_email:hover,
         #btn_email_submit:hover {
             background-color: hsl(176, 68%, 64%);
         }
+
         /* partie mobile */
-        
-        @media screen and (max-width: 375px) {
+
+        @media screen and (max-width: 475px) {
             body {
                 margin: 0 auto;
                 max-width: 375px;
             }
+
             img {
                 max-width: 375px;
                 margin: 0 auto;
             }
+
             #container {
                 max-width: 375px;
                 margin: 0 auto;
             }
+
+            .inscription {
+                text-align: center;
+                margin: auto;
+                width: 630px;
+                padding: 50px;
+                border-radius: 10px;
+                z-index: 1;
+                left: 0%;
+                bottom: -8px;
+                box-shadow: 5px 2px 5px hsl(216, 53%, 9%);
+            }
+
             #service {
                 display: grid;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 2fr 2fr;
                 width: 350px;
                 margin: auto;
-                grid-template-areas: "serv1""serv2""serv3""serv4";
+                grid-template-areas: "serv1" "serv2" "serv3" "serv4";
             }
-            .stay_productive {
-                float: none;
-            }
+
+
+
             #employe {
                 display: grid;
                 grid-template-rows: 12fr 2fr 2fr;
-                grid-template-areas: "emp1""emp2""emp3";
+                grid-template-areas: "emp1" "emp2" "emp3";
             }
+
             footer {
                 /* display: grid;
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -411,45 +455,165 @@
                 margin: auto; */
                 display: inline-block;
             }
-        }
-        
-        @media screen and (min-width:1200px) {
-            footer {
-                display: flex;
+
+            /* .lieu {
+                bottom: 78px;
+            } */
+
+            .locationImg {
+                left: 113px;
+                bottom: 440px;
+            }
+
+            .lieu {
+                bottom: 385px;
+                position: absolute;
             }
         }
+
+        @media screen and (min-width: 476px) and (max-width:575px) {
+            /* body {
+                margin: 0 auto;
+                max-width: 375px;
+            } */
+
+            /* img {
+                max-width: 375px;
+                margin: 0 auto;
+            } */
+
+            /* #container {
+                max-width: 375px;
+                margin: 0 auto;
+            } */
+
+            .inscription {
+                text-align: center;
+                margin: auto;
+                width: 630px;
+                padding: 50px;
+                border-radius: 10px;
+                z-index: 1;
+                left: 0%;
+                bottom: -8px;
+                box-shadow: 5px 2px 5px hsl(216, 53%, 9%);
+            }
+
+            #service {
+                display: grid;
+                grid-template-rows: 2fr 2fr;
+                width: 350px;
+                margin: auto;
+                /* grid-template-areas: "serv1" "serv2" "serv3" "serv4"; */
+            }
+
+
+
+            #employe {
+                display: grid;
+                grid-template-rows: 12fr 2fr 2fr;
+                grid-template-areas: "emp1" "emp2" "emp3";
+            }
+
+            footer {
+                /* display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: "logo""lieu""telEmail""about""contact""reseau";
+                width: 350px;
+                margin: auto; */
+                display: inline-block;
+            }
+
+            /* .lieu {
+                bottom: 78px;
+            } */
+
+            .locationImg {
+                left: 113px;
+                bottom: 440px;
+            }
+
+            .lieu {
+                bottom: 385px;
+                position: absolute;
+            }
+        }
+
+
+
         /* - Desktop: 1440px */
-        
-        @media screen and (min-width:1201px) and (max-width:1440px) {
-            #contain {
+
+        /* @media screen and (min-width:1201px) and (max-width:1440px) { */
+        @media screen and (min-width:1200px) {
+            /* #contain {
                 margin: 0 auto;
                 width: 1200px;
-            }
+            } */
+
             #service {
                 width: 900px;
                 display: grid;
                 grid-template-columns: 2fr 2fr;
             }
+
             #employe {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
             }
+
+            /* } */
+
+            /* @media screen and (min-width:1200px) { */
+            footer {
+                display: flex;
+            }
         }
-        /* Extra small devices (phones, 600px and down) @media only screen and (max-width: 600px) {
-            ...
+
+        @media (min-width: 992px) {
+            .files {
+                width: 437px;
+                margin: auto;
+                z-index: 1;
+                position: absolute;
+                left: 35%;
+                top: 728px;
+            }
+
+            #service {
+                display: grid;
+                grid-template-columns: 2fr 2fr;
+                margin: auto;
+                width: 950px;
+                padding: 140px 0 0 0;
+                grid-row-gap: 90px;
+            }
+
+            #employe {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+
+            .inscription {
+                text-align: center;
+                margin: auto;
+                width: 630px;
+                padding: 50px;
+                border-radius: 10px;
+                z-index: 1;
+                left: 30%;
+                bottom: -130px;
+                box-shadow: 5px 2px 5px hsl(216, 53%, 9%);
+            }
+
+            .locationImg {
+                left: 113px;
+                bottom: 440px;
+            }
+
+            .lieu {
+                bottom: 385px;
+                position: absolute;
+            }
+
         }
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        /* @media only screen and (min-width: 600px) { */
-        /* } */
-        /* Medium devices (landscape tablets, 768px and up) */
-        /* @media only screen and (min-width: 768px) { */
-        /* ...
-        } */
-        /* Large devices (laptops/desktops, 992px and up) */
-        /* @media only screen and (min-width: 992px) {
-            
-        } */
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
-        /* @media only screen and (min-width: 1200px) {
-            ...
-        } */
